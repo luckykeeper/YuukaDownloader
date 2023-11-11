@@ -48,7 +48,9 @@ func downloadQuests(_ fyne.Window) fyne.CanvasObject {
 		widget.NewButton("qq",
 			func() { analyzeButton("qq", downloadLinkBox) },
 		),
-
+		widget.NewButton("gs",
+			func() { analyzeButton("gs", downloadLinkBox) },
+		),
 		widget.NewButton("手动解析",
 			func() { analyzeButton(manualPrefixBox.Text, downloadLinkBox) },
 		),
@@ -419,7 +421,7 @@ func analyzeUrl(usePrefix, urlToBeAnalyze string) (analyzedResult map[string]str
 			analyzedResult["prefix"] = usePrefix
 		}
 	} else {
-		if prefix != "" && prefix != "zz." && prefix != "qq." {
+		if prefix != "" && prefix != "zz." && prefix != "qq." && prefix != "gs." {
 			log.Println("疑似非初音站链接")
 			return nil, 406
 		}
