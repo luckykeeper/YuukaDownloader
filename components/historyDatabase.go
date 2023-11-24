@@ -64,12 +64,16 @@ func historyDatabase(_ fyne.Window) fyne.CanvasObject {
 				// queryAccordionTabAreaData := make([]*widget.AccordionItem, areaCount)
 				queryAccordionTab := widget.NewAccordion()
 
+				// 页面可滚动
+				pageContainer := container.NewVBox(queryAreaResultWindowForm, queryAccordionTab)
+				pageContainerScroll := container.NewHScroll(pageContainer)
+
 				for _, area := range areaList {
 					currentItem := queryGameInfoByArea(area)
 					queryAccordionTab.Append(currentItem)
 				}
 
-				queryAreaResultWindow.SetContent(container.NewVBox(queryAreaResultWindowForm, queryAccordionTab))
+				queryAreaResultWindow.SetContent(pageContainerScroll)
 				queryAreaResultWindow.Resize(fyne.NewSize(1280, 720))
 
 			}

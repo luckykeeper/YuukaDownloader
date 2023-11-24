@@ -1,6 +1,6 @@
 // 初音站（yngal/fufugal）链接快速生成，并送 Aria2 下载
 // 适用于多part，多站链接快速生成复制
-// Powered By Luckykeeper 20231111 ver 1.0.1, Written By Go 1.21.4
+// Powered By Luckykeeper Build 20231124 | Ver 1.0.2, Written By Go 1.21.4
 
 package main
 
@@ -82,7 +82,7 @@ func main() {
 	a.SetIcon(logo)
 	makeTray(a)
 	logLifecycle(a)
-	w := a.NewWindow("yuukaDown, A software to Download Gal Through muti-Platform | Powered by Luckykeeper | Build 20231111 | Ver 1.0.1")
+	w := a.NewWindow("yuukaDown, A software to Download Gal Through muti-Platform | Powered by Luckykeeper | Build 20231124 | Ver 1.0.2")
 	topWindow = w
 	w.SetMainMenu(makeMenu(a, w))
 	w.SetMaster()
