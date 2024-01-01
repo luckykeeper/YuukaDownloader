@@ -1,6 +1,6 @@
 // 初音站（yngal/fufugal）链接快速生成，并送 Aria2 下载
 // 适用于多part，多站链接快速生成复制
-// Powered By Luckykeeper Build 20231124 | Ver 1.0.2, Written By Go 1.21.4
+// Powered By Luckykeeper Build 20240101 | Ver 1.0.3, Written By Go 1.21.5
 
 package main
 
@@ -33,6 +33,9 @@ const (
 	sql_initialize_galDB         = `CREATE TABLE yuukaDownGalDB (galgameName TEXT PRIMARY KEY NOT NULL,downloadBaseUrl TEXT NOT NULL,partNum TEXT NOT NULL,fileType TEXT NOT NULL,subArea TEXT NOT NULL);`
 
 	preferenceCurrentComponent = "currentComponent"
+
+	AppVersion   = "1.0.3"
+	BuildVersion = "20240101"
 )
 
 var topWindow fyne.Window
@@ -82,7 +85,7 @@ func main() {
 	a.SetIcon(logo)
 	makeTray(a)
 	logLifecycle(a)
-	w := a.NewWindow("yuukaDown, A software to Download Gal Through muti-Platform | Powered by Luckykeeper | Build 20231124 | Ver 1.0.2")
+	w := a.NewWindow("yuukaDown, A software to Download Gal Through muti-Platform | Powered by Luckykeeper | Build " + BuildVersion + " | Ver " + AppVersion)
 	topWindow = w
 	w.SetMainMenu(makeMenu(a, w))
 	w.SetMaster()

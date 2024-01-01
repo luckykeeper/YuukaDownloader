@@ -4,7 +4,8 @@ package components
 import (
 	"database/sql"
 	"fmt"
-	"io/ioutil"
+	"io"
+
 	"log"
 	"math/rand"
 	"net/http"
@@ -217,7 +218,7 @@ func testAria2Status() (errorCode, downloadSpeed, uploadSpeed, numActive, numWai
 		return
 	}
 	defer res.Body.Close()
-	aria2StatusResponse, _ := ioutil.ReadAll(res.Body)
+	aria2StatusResponse, _ := io.ReadAll(res.Body)
 	log.Println(string(aria2StatusResponse))
 	errorCode = fmt.Sprint(res.StatusCode)
 	downloadSpeed = fmt.Sprint(gjson.Get(string(aria2StatusResponse), "result.downloadSpeed"))
