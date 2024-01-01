@@ -45,9 +45,13 @@
 
 （目前没有设计历史数据库的关闭记录功能~~懒~~，~~谨防社死~~）
 
-<details>   <summary>历史数据库——二级菜单（点击展开/收合图片）</summary>   <p><img src="./images/scr04_p1.png" alt="优香酱可爱捏" style="zoom: 67%;" /></p></details>
+<details>   <summary>历史数据库——二级菜单(查看历史下载数据)（点击展开/收合图片）</summary>   <p><img src="./images/scr04_p1.png" alt="优香酱可爱捏" style="zoom: 67%;" /></p></details>
 
 按照分区显示，展开分区显示游戏名称，点击可复制链接，送“下发下载任务”即可再次下载，也可用于浏览器粘贴下载
+
+<details>   <summary>历史数据库——二级菜单(搜索历史下载数据)（点击展开/收合图片）</summary>   <p><img src="./images/scr04_p2.png" alt="优香酱可爱捏" style="zoom: 67%;" /></p></details>
+
+按照分区或名称搜索下载过的游戏，点击可复制链接，送“下发下载任务”即可再次下载，也可用于浏览器粘贴下载
 
 # 系统支持情况
 
