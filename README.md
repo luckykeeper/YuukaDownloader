@@ -1,5 +1,9 @@
 <p align="center"><img src="./images/Yuuka_Header.jpg" style="zoom:40%;" /></p><h1 align="center">YuukaDownloader</h1><h4 align="center">优香酱系列小工具 | 快速解析初音站(yngal/fufugal)链接并送Aria2下载</h4><hr/>
 
+> Tips: Flutter 版已经发布，建议使用 Flutter 版，Golang 版的数据可以迁移到 Flutter 版
+>
+> [传送门](https://github.com/luckykeeper/yuuka_downloader_flutter)
+
 # 功能简介
 
 - 支持 `Aria2` 平台，下载速度快，部署方便
@@ -65,6 +69,7 @@ Go 是一个跨平台的语言，而程序所用的 Fyne 是跨平台的 GUI 框
   https://github.com/luckykeeper/YuukaChan-DPTECH
 - GitHub - luckykeeper/YuukaDownloader: 优香酱系列小工具——快速解析初音站(yngal/fufugal)链接并送Aria2下载
   https://github.com/luckykeeper/YuukaDownloader
+- GitHub - luckykeeper/yuuka_downloader_flutter: (Flutter 版)优香酱系列小工具——快速解析初音站(yngal/fufugal)链接并送Aria2下载 [https://github.com/luckykeeper/yuuka_downloader_flutter](https://github.com/luckykeeper/yuuka_downloader_flutter)
 - GitHub - luckykeeper/YuukaChan-Ruijie-WS6xxx-Exporter: 优香酱系列小工具——锐捷AC WS6xxx 系列 Prometheus Exporter ，附带 Grafana 仪表盘模板 | HayaseYuuka Ruijie AC WS6xxx Series Prometheus Exporter With Grafana Template Included https://github.com/luckykeeper/YuukaChan-Ruijie-WS6xxx-Exporter
 
 # 💈就要在这里立法典！
